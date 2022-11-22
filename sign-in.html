@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sign-in.min.css">
+    <title>Sign-in</title>
+  </head>
+<body class="sign-in-page">
+  <header class="acc-header">
+    <p class="acc-header__title">
+      Account
+    </p>
+    <a class="logo sign-in__logo" href="index.html">
+      <img class="logo__img sign-in__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
+    </a>
+  </header>
+  <main>
+    <section class="sign-in">
+      <div class="sign-in__content">
+        <div class="sign-in__inner">
+          <h4 class="sign-in__title">
+            Sign in with email
+          </h4>
+          <p class="sign-in__text">
+            Please enter your e-mail and password:
+          </p>
+          <form class="sign-in__form form" action="#">
+            <input class="form__input" type="email" required placeholder="Email">
+            <label class="form__label">
+              <input class="form__input" type="password" required placeholder="Password">
+              <a class="form__pass" href="#">Forgot password?</a>
+            </label>
+            <button class="form__btn" type="submit">Sign in</button>
+          </form>
+          <p class="sign-in__login-with">
+            or sign in with...
+          </p>
+          <div class="sign-in__social-login social-login">
+            <button class="social-login__btn" type="button">
+              <div class="social-login__box">
+                <img class="social-login__box-img" src="./img/icons/Login-icon_google.svg" alt="google">
+              </div>
+              <span class="social-login__text">
+                Google
+              </span>
+            </button>
+            <button class="social-login__btn" type="button">
+              <div class="social-login__box social-login__box--apple">
+                <img class="social-login__box-img" src="./img/icons/Login-icon_apple.svg" alt="google">
+              </div>
+              <span class="social-login__text">
+                Apple
+              </span>
+            </button>
+            <button class="social-login__btn" type="button">
+              <div class="social-login__box social-login__box--facebook">
+                <img class="social-login__box-img" src="./img/icons/Login-icon_facebook.svg" alt="google">
+              </div>
+              <span class="social-login__text">
+                Facebook
+              </span>
+            </button>
+          </div>
+      </div>
+      <div class="sign-in__inner sign-in__recovery-inner">
+        <p class="sign-in__recovery-title">
+          Recover password
+        </p>
+        <p class="sign-in__recovery-text">
+          Please enter your email:
+        </p>
+        <form class="form sign-in__form sign-in__recovery-form" action="#">
+          <input class="form__input form__recovery-input" type="email" required placeholder="Email">
+          <button class="form__btn" type="submit">Recover</button>
+        </form>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="acc-footer">
+    <p class="sign-in__create">
+      Don't have an account? <a class="sign-in__create-link" href="sign-up.html">
+        Create one
+      </a>
+    </p>
+  </footer>
+  <script src="./js/app.min.js"></script>
+</body>
+</html>

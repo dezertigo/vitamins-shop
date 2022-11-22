@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sign-up.min.css">
+    <title>Sign-up</title>
+  </head>
+<body class="sign-up-page">
+  <header class="acc-header">
+    <p class="acc-header__title">
+      Account
+    </p>
+    <a class="logo sign-in__logo sign-up__logo" href="index.html">
+      <img class="logo__img sign-in__logo-img sign-up__logo-img" src="./img/icons/header-logo-icon.svg" alt="logo">
+    </a>
+  </header>
+  <section class="sign-up">
+    <div class="sign-in__content">
+      <div class="sign-up__inner sign-in__inner">
+        <div class="sign-up__btns">
+          <button type="button" class="sign-up__btn active sign-up__btn--regular">
+            Regular customer
+          </button>
+          <button type="button" class="sign-up__btn">
+            Wholesale customer
+          </button>
+        </div>
+        <p class="sign-up__login-with sign-in__login-with">
+          Sign up with
+        </p>
+        <div class="sign-in__social-login social-login sign-up__social-login">
+          <button class="social-login__btn" type="button">
+            <div class="social-login__box">
+              <img class="social-login__box-img" src="./img/icons/Login-icon_google.svg" alt="google">
+            </div>
+            <span class="social-login__text">
+              Google
+            </span>
+          </button>
+          <button class="social-login__btn" type="button">
+            <div class="social-login__box social-login__box--apple">
+              <img class="social-login__box-img" src="./img/icons/Login-icon_apple.svg" alt="google">
+            </div>
+            <span class="social-login__text">
+              Apple
+            </span>
+          </button>
+          <button class="social-login__btn" type="button">
+            <div class="social-login__box social-login__box--facebook">
+              <img class="social-login__box-img" src="./img/icons/Login-icon_facebook.svg" alt="google">
+            </div>
+            <span class="social-login__text">
+              Facebook
+            </span>
+          </button>
+        </div>
+        <p class="sign-up__login-email">
+          or sign up using your email address...
+        </p>
+        <form class="form sign-up__form" action="#">
+          <input class="form__input sign-up__form-input" type="email" required placeholder="Email">
+          <input class="form__input sign-up__form-input" type="text" required placeholder="First Name">
+          <input class="form__input sign-up__form-input" type="text" required placeholder="Last Name">
+          <input class="form__input sign-up__form-input" type="password" required placeholder="Password">
+          <label class="form__label sign-up__form-label">
+            <input class="form__input sign-up__form-input sign-up__form-file" type="text" required placeholder="Permission">
+            <button class="sign-up__form-upload">Upload</button>
+          </label>
+          <p class="sign-up__form-permission">
+            Please attach wholesale purchase permission
+          </p>
+          <button class="form__btn sign-up__form-btn" type="submit" required placeholder="Password">
+            Create my account
+          </button>
+        </form>
+      </div>
+      <div class="sign-in__inner sign-in__recovery-inner">
+        <p class="sign-in__recovery-title">
+          Wholesale purchase permission
+        </p>
+        <p class="sign-in__recovery-text">
+          Please attach file to continue 
+        </p>
+        <form class="form sign-up__form form__wholesale" action="#">
+          <label class="form__label">
+            <input class="form__input sign-up__form-input sign-up__form-file sign-up__wholesale-input" type="text" required placeholder="Permission">
+            <button class="sign-up__form-upload">Upload</button>
+          </label>
+          <button class="form__btn sign-up__form-btn" type="submit" required placeholder="Password">
+            Create my account
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="acc-footer">
+    <p class="sign-in__create">
+      Already have an account? <a class="sign-in__create-link" href="sign-in.html">
+        Sign in
+      </a>
+    </p>
+  </footer>
+  <script src="./js/app.min.js"></script>
+</body>
+</html>

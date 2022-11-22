@@ -1,0 +1,331 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+button,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.order-page .order__btn {
+  font-family: "Effra", sans-serif;
+  font-weight: 700;
+}
+
+.order-page .order__title {
+  font-family: "Effra", sans-serif;
+  font-weight: 500;
+}
+
+html,
+body {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+}
+
+.order-page .order__btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("fonts/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  font-display: swap;
+  src: url("../fonts/AvenirNext-DemiBold.woff2") format("woff2"), url("fonts/AvenirNext-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("fonts/AvenirNextCyr-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("fonts/AvenirNextCyr-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AvenirNextCyr;
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("fonts/AvenirNextCyr-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Effra;
+  font-display: swap;
+  src: url("../fonts/Effra-Bold.woff2") format("woff2"), url("fonts/Effra-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Effra;
+  font-display: swap;
+  src: url("../fonts/Effra-Medium.woff2") format("woff2"), url("fonts/Effra-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Effra;
+  font-display: swap;
+  src: url("../fonts/Effra-Regular.woff2") format("woff2"), url("fonts/Effra-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chromeperfectpixel-layer-img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero.active {
+  z-index: -1;
+}
+
+.order-page .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-page .order__logo {
+  max-width: 168px;
+  width: 100%;
+  margin: 0 auto 80px;
+}
+
+.order-page .order__logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.order-page .order__title {
+  font-size: 26px;
+  line-height: 31px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.order-page .order__text {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 auto 23px;
+  text-align: center;
+}
+
+.order-page .order__btn {
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 330px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 50px;
+  background-color: #FF7D4E;
+  color: #fff;
+  border: 0;
+  border-radius: 100px;
+}
+
+.order-page .order__line {
+  max-width: 508px;
+  background-color: #f2f2f2;
+  height: 1px;
+  margin-bottom: 40px;
+}
+
+.order-page .order__problems {
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.5;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 993px) {
+  .container {
+    padding: 0 20px 0 19px;
+  }
+}
+
+@media (max-width: 500px) {
+  .order-page .order__logo {
+    max-width: 84px;
+    margin-bottom: 16px;
+  }
+
+  .order-page .order__content {
+    transform: translateY(15px);
+  }
+
+  .order-page .order__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 14px;
+  }
+
+  .order-page .order__text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+  .order-page .order__btn {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 18px;
+  }
+
+  .order-page .order__line {
+    margin-bottom: 36px;
+  }
+
+  .order-page .order__problems span {
+    display: block;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .order-page .order {
+    padding: 0 20px;
+  }
+
+  .order-page .order__content {
+    transform: translateY(14px);
+  }
+
+  .order-page .order__problems {
+    padding: 0;
+  }
+
+  .order-page .order__problems--width {
+    max-width: 220px;
+  }
+
+  .order-page .order__problems span {
+    display: inline-block;
+  }
+}

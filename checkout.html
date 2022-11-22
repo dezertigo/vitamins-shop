@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/checkout.min.css">
+    <title>Checkout</title>
+  </head>
+<body class="checkout-page">
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./img/icons/header-logo-icon.svg" alt="logo" class="logo__img">
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="checkout">
+      <div class="container">
+        <div class="checkout__inner">
+          <div class="checkout__content">
+            <h2 class="checkout__title">
+              Delivery Information
+            </h2>
+            <form class="account__form" action="#">
+              <label class="account__label">First Name
+                <input class="account__input" type="text" placeholder="John">
+              </label>
+              <label class="account__label">Last Name
+                <input class="account__input" type="text" placeholder="Smith">
+              </label>
+              <label class="account__label">Address Line 1
+                <input class="account__input" type="text" placeholder="Hilton st. 123">
+              </label>
+              <label class="account__label">Address Line 2
+                <input class="account__input" type="text">
+              </label>
+              <label class="account__label">City
+                <input class="account__input" type="text" placeholder="New York">
+              </label>
+              <fieldset class="account__fieldset">
+                <label class="account__label account__label--state account__label--select">State / Province
+                  <input class="account__input account__select" type="text" placeholder="NY" disabled>
+                </label>
+                <label class="account__label account__label--state">ZIP / Postal Code
+                  <input class="account__input" type="number" placeholder="213 822">
+                </label>
+              </fieldset>
+              <label class="account__label">Email
+                <input class="account__input" type="email" placeholder="johnsmith@gmail.com">
+              </label>
+              <label class="account__label">Phone Number
+                <input class="account__input" type="phone" placeholder="8 029 876 56 21">
+              </label>
+              <label class="account__label account__label--wholesale">Wholesale purchase permission
+                <input class="account__input" type="text" placeholder="123qwer.pdf">
+                <a class="account__btn-file" href="#">Update</a>
+              </label>
+            </form>
+            <div class="checkout__billing">
+              <h2 class="checkout__title">
+                Biling
+              </h2>
+              <div class="account__form">
+                <label class="account__label">Card Number
+                  <input class="account__input" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                </label>
+                <fieldset class="account__fieldset">
+                  <label class="account__label account__label--state account__label--select">Expiration
+                    <input class="account__input account__select" type="text" placeholder="MM/YY" disabled>
+                  </label>
+                  <label class="account__label account__label--state">CVC
+                    <input class="account__input" type="number" placeholder="CVC">
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+            <button class="checkout__cart-btn checkout__cart-btn--mobile">
+              Place order
+            </button>
+          </div>
+          <div class="checkout__cart">
+            <div class="checkout__preview">
+              <p class="checkout__preview-title">
+                Today’s total
+              </p>
+              <p class="checkout__preview-price">
+                $129.66
+              </p>
+            </div>
+            <div class="checkout__wrapper">
+              <div class="checkout__body">
+                <div class="checkout__cards">
+                  <div class="checkout__card">
+                    <div class="checkout__card-img">
+                      <img src="./img/checkout/cart-item1.png" alt="">
+                    </div>
+                    <p class="checkout__card-title">
+                      1 x Ortho Molecular Products 5-HTP Capsules
+                    </p>
+                    <p class="checkout__card-price">
+                      $61.98
+                    </p>
+                  </div>
+                  <div class="checkout__card">
+                    <div class="checkout__card-img">
+                      <img src="./img/checkout/cart-item2.png" alt="">
+                    </div>
+                    <p class="checkout__card-title">
+                      3 x Standard Process Thymus PMG 90 Tablets
+                    </p>
+                    <p class="checkout__card-price checkout__card-price--discount">
+                      <span>$134.56</span>$61.98
+                    </p>
+                  </div>
+                  <div class="checkout__card">
+                    <div class="checkout__card-img">
+                      <img src="./img/checkout/cart-item3.png" alt="">
+                    </div>
+                    <p class="checkout__card-title">
+                      1 x Ortho Molecular Products 5-HTP Capsules
+                    </p>
+                    <p class="checkout__card-price checkout__card-price--discount">
+                      <span>$134.56</span> $61.98
+                    </p>
+                  </div>
+                </div>
+                <div class="checkout__subtotal checkout__box">
+                  <p class="checkout__subtotal-title">
+                    Subtotal:
+                  </p>
+                  <p class="checkout__subtotal-price">
+                    $120.46
+                  </p>
+                </div>
+                <div class="checkout__discount checkout__box">
+                  <p class="checkout__discount-title">
+                    Discount
+                  </p>
+                  <p class="checkout__discount-price">
+                    -$31.20
+                  </p>
+                </div>
+                <div class="checkout__shipping checkout__box">
+                  <p class="checkout__shipping-title">
+                    Shipping:
+                  </p>
+                  <p class="checkout__shipping-text">
+                    $9.20
+                  </p>
+                </div>
+                <div class="checkout__total checkout__box">
+                  <p class="checkout__total-title">
+                    Today’s Total:
+                  </p>
+                  <p class="checkout__total-price">
+                    $129.66
+                  </p>
+                </div>
+                <button class="checkout__cart-btn">
+                  Place order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Return Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Terms & Conditions</a>
+          </li>
+        </ul>
+        <div class="footer__graphic">
+          <img src="./img/checkout/stripe.svg" alt="#">
+          <img src="./img/checkout/cards.svg" alt="#">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/app.min.js"></script>
+</body>
+</html>
