@@ -430,6 +430,11 @@ body {
   line-height: 19px;
   padding: 18px 0;
   border-radius: 100px;
+  transition: all 0.5s ease;
+}
+
+.shop-aside__footer-btn:hover {
+  background-color: #6e5ddc;
 }
 
 .info-aside {
@@ -673,6 +678,11 @@ body {
   border-radius: 100px;
   font-size: 20px;
   line-height: 24px;
+  transition: all 0.5s ease;
+}
+
+.cart__btn:hover {
+  background-color: #6e5ddc;
 }
 
 .cart__btn span {
@@ -884,7 +894,16 @@ body {
   margin: 0 19px 0 12px;
 }
 
+body.policy-page .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 .policy {
+  margin-top: 110px;
   padding: 80px 0 40px;
   border: 1px solid rgba(0, 0, 0, 0.07);
 }
@@ -1138,6 +1157,10 @@ body {
     bottom: 50%;
     transform: translate(0, 50%) rotate(-45deg);
     height: 2px;
+  }
+
+  .policy {
+    margin-top: 70px;
   }
 
   .policy__item + .policy__item {

@@ -426,6 +426,11 @@ body {
   line-height: 19px;
   padding: 18px 0;
   border-radius: 100px;
+  transition: all 0.5s ease;
+}
+
+.shop-aside__footer-btn:hover {
+  background-color: #6e5ddc;
 }
 
 .info-aside {
@@ -739,6 +744,11 @@ body.sign-in-page {
   border: none;
   background-color: #ff7d4e;
   border-radius: 100px;
+  transition: all 0.5s ease;
+}
+
+.form__btn:hover {
+  background-color: #6E5DDC;
 }
 
 .form__recovery-input {

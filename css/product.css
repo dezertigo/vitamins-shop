@@ -436,6 +436,11 @@ body {
   line-height: 19px;
   padding: 18px 0;
   border-radius: 100px;
+  transition: all 0.5s ease;
+}
+
+.shop-aside__footer-btn:hover {
+  background-color: #6e5ddc;
 }
 
 .info-aside {
@@ -679,6 +684,11 @@ body {
   border-radius: 100px;
   font-size: 20px;
   line-height: 24px;
+  transition: all 0.5s ease;
+}
+
+.cart__btn:hover {
+  background-color: #6e5ddc;
 }
 
 .cart__btn span {
@@ -1019,6 +1029,11 @@ body.product-page .burger::after {
 
 body.product-page .burger__btn {
   background-color: #fff;
+}
+
+body.product-page .burger.active::before,
+body.product-page .burger.active::after {
+  background-color: #000;
 }
 
 .product {
